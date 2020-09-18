@@ -1,0 +1,120 @@
+:root{
+    --color-backgorund: #2AC2A3;
+}
+
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bio{
+    width: 300px;
+    padding: 0px;
+    margin: 20px;
+}
+
+.bio img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    
+}
+
+.bio p{
+    font: 500 1rem Raleway;
+
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+.categoria{
+    /* display: flex;
+    flex-wrap: wrap ; */
+
+    padding: 5px 0px 0px 5px;
+    margin-bottom: 40px;
+}
+
+.main_divider{
+    font: 800 2rem Raleway;
+    color: white;
+
+    border-top-left-radius: 10px;
+    background-color: var(--color-backgorund);
+    padding: 5px 15px 5px 15px;
+    display: inline-block;
+
+    transition: background-color .3s;
+
+}
+
+.main_divider_hr{
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 3px solid var(--color-backgorund);
+    padding: 0;
+
+    position: relative;
+    margin-bottom: 10px;
+
+    transition: border-top .3s;
+}
+
+.main_divider:hover{
+    background-color: #82dbc9;
+}
+
+
+.card_principal{
+    padding: 5px 5px 20px 0px;
+}
+
+.nome_da_empresa{
+    width: auto;
+    font: 800 .9rem Raleway;
+    color: white;
+    text-decoration: none;
+
+    border-top-left-radius: 10px;
+    background-color: black;
+
+    display: inline-block;
+    padding: 5px;
+
+    transition: background-color .3s;
+}
+
+.nome_da_empresa:hover{
+    background-color: rgb(80, 80, 80);
+}
+
+.cargo{
+    font: 800 1.3rem Raleway;
+    padding: 0px;
+}
+
+.periodo{
+    font: italic 300 1rem Raleway;
+    padding: 0px;
+}
+
+
+.descricao{
+    font: 300 1rem Raleway;
+    padding: .5rem 0 0 1rem;
+
+}
