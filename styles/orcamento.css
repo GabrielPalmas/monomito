@@ -30,7 +30,7 @@ body {
 }
 
 .splash h1,
-h2 {
+.splash h2 {
   color: var(--color-text-white);
   padding-left: 14px;
 }
@@ -41,7 +41,7 @@ h2 {
 }
 
 .splash h2 {
-  font: 200 2rem Raleway;
+  font: 200 2rem var(--font-text);
   padding-top: 15px;
 }
 
@@ -51,10 +51,11 @@ h2 {
 .descricao {
   margin: 1.5rem;
   margin-top: 3rem;
+
 }
 
 .descricao h1,
-p {
+.descricao p {
   margin-bottom: 3rem;
   list-style-type: none;
 }
@@ -67,7 +68,8 @@ p {
 }
 
 .descricao p {
-  font: 500 1rem Raleway;
+  margin: 0;
+  font: 500 1rem var(--font-text);
   text-indent: 2rem;
   line-height: 1.5rem;
 }
@@ -79,6 +81,7 @@ p {
   width: 80vw;
   max-height: max-content;
   margin-bottom: 4.5rem;
+  margin-top: 4rem;
 }
 
 .descricao model-viewer:focus{
@@ -96,7 +99,7 @@ p {
   margin: 0px 10px;
   display: flex;
   justify-content: space-between;
-  font: 500 1rem Raleway;
+  font: 500 1rem var(--font-text);
 }
 
 .descricao hr {
@@ -113,11 +116,10 @@ p {
 
 
 .cash{
-    margin: 4rem 0;
-    border: solid 1px red;
+    margin: 6rem 0;
 }
 
-.cash h1, p{
+.cash h1, .cash p{
     margin: 0;
     padding: 0px;
     margin-left: 1.5rem;
@@ -125,24 +127,94 @@ p {
 }
 
 .cash h1{
-    font: 500 8rem Raleway;
-    border: solid 1px green;
+    font: 500 7rem var(--font-text);
+    margin-bottom: -.45rem;
 
 
 }
 
 .cash p{
-    font: 300 1rem Raleway;
+    font: 300 1rem var(--font-text);
     line-height: 1.2rem;
 }
 
 .cash strong{
-    font: 600 1rem Raleway;
+    font: 600 1rem var(--font-text);
     line-height: 1.2rem;
 }
 
 .bio{
+    font: 300 1rem var(--font-text);
     background-color: var(--color-main-theme);
-    margin: 0;
+    color: var(--color-text-white);
+    padding: 4rem 1.5rem;
+}
+
+.bio h1{
+    font: 800 2rem Playfair Display;
+}
+    
+.bio h2{
     padding: 0px;
+    font: italic 300 1rem var(--font-text);
+    line-height: .75rem;
+    margin-bottom: 2rem;
+}
+
+
+.social{
+margin: 2rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.bio img{
+    height: 64px;
+
+}
+
+.bio p{
+    padding: 0px;
+    margin: 0;
+    text-indent: 2rem;
+}
+
+.bottom {
+    color: var(--color-text-white);
+    position: relative;
+    max-width: 100vw;
+    overflow: hidden;
+}
+  
+  .bottom img {
+    max-height: 100vh;
+}
+
+.bottom div {
+    font: 200 1rem var(--font-text);
+    width: 100vw;
+    height: 40vh;
+    background-image: linear-gradient(
+      to top,
+      var(--color-main-theme),
+      var(--color-main-theme-alpha)
+    );
+    position: absolute;
+    bottom: 0;
+  }
+
+
+ .bottom h2{
+    margin-left: 10px;
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .bottom p{
+    margin-left: 10px;
+    position: absolute;
+    bottom: 10px;
+
 }
