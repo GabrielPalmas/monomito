@@ -1,5 +1,7 @@
-*:focus {
-    outline: none;
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -42,6 +44,9 @@ h2 {
   font: 200 2rem Raleway;
   padding-top: 15px;
 }
+
+
+
 
 .descricao {
   margin: 1.5rem;
@@ -99,6 +104,45 @@ p {
   border-top: 1px solid var(--color-light-gray);
 }
 
+
+
+
 .render img {
   max-width: 100vw;
+}
+
+
+.cash{
+    margin: 4rem 0;
+    border: solid 1px red;
+}
+
+.cash h1, p{
+    margin: 0;
+    padding: 0px;
+    margin-left: 1.5rem;
+    
+}
+
+.cash h1{
+    font: 500 8rem Raleway;
+    border: solid 1px green;
+
+
+}
+
+.cash p{
+    font: 300 1rem Raleway;
+    line-height: 1.2rem;
+}
+
+.cash strong{
+    font: 600 1rem Raleway;
+    line-height: 1.2rem;
+}
+
+.bio{
+    background-color: var(--color-main-theme);
+    margin: 0;
+    padding: 0px;
 }
