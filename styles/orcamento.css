@@ -1,7 +1,7 @@
-*{
-    margin: 0;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -45,17 +45,14 @@ body {
   padding-top: 15px;
 }
 
-
-
-
 .descricao {
   margin: 1.5rem;
   margin-top: 3rem;
-
 }
 
 .descricao h1,
 .descricao p {
+    max-width: 720px;
   margin-bottom: 3rem;
   list-style-type: none;
 }
@@ -79,13 +76,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 80vw;
-  max-height: max-content;
+  height: 400px;
   margin-bottom: 4.5rem;
   margin-top: 4rem;
 }
 
-.descricao model-viewer:focus{
-    outline: none;
+.descricao model-viewer:focus {
+  outline: none;
 }
 
 .descricao ul {
@@ -107,114 +104,104 @@ body {
   border-top: 1px solid var(--color-light-gray);
 }
 
-
-
-
 .render img {
   max-width: 100vw;
 }
 
-
-.cash{
-    margin: 6rem 0;
+.cash {
+  margin: 6rem 0;
 }
 
-.cash h1, .cash p{
-    margin: 0;
-    padding: 0px;
-    margin-left: 1.5rem;
-    
+.cash h1,
+.cash p {
+  margin: 0;
+  padding: 0px;
+  margin-left: 1.5rem;
 }
 
-.cash h1{
-    font: 500 7rem var(--font-text);
-    margin-bottom: -.45rem;
-
-
+.cash h1 {
+  font: 500 7rem var(--font-text);
+  margin-bottom: -0.45rem;
 }
 
-.cash p{
-    font: 300 1rem var(--font-text);
-    line-height: 1.2rem;
+.cash p {
+  font: 300 1rem var(--font-text);
+  line-height: 1.2rem;
 }
 
-.cash strong{
-    font: 600 1rem var(--font-text);
-    line-height: 1.2rem;
+.cash strong {
+  font: 600 1rem var(--font-text);
+  line-height: 1.2rem;
 }
 
-.bio{
-    font: 300 1rem var(--font-text);
-    background-color: var(--color-main-theme);
-    color: var(--color-text-white);
-    padding: 4rem 1.5rem;
+.bio {
+    width: 100%;
+  font: 300 1rem var(--font-text);
+  background-color: var(--color-main-theme);
+  color: var(--color-text-white);
+  padding: 4rem 1.5rem;
 }
 
-.bio h1{
-    font: 800 2rem Playfair Display;
-}
-    
-.bio h2{
-    padding: 0px;
-    font: italic 300 1rem var(--font-text);
-    line-height: .75rem;
-    margin-bottom: 2rem;
+.bio h1 {
+  font: 800 2rem Playfair Display;
 }
 
-
-.social{
-margin: 2rem 3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.bio h2 {
+  padding: 0px;
+  font: italic 300 1rem var(--font-text);
+  line-height: 0.75rem;
+  margin-bottom: 2rem;
 }
 
-
-.bio img{
-    height: 64px;
-
+.social {
+  margin: 2rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.bio p{
-    padding: 0px;
-    margin: 0;
-    text-indent: 2rem;
+.bio img {
+  height: 64px;
+}
+
+.bio p {
+  padding: 0px;
+  margin: 0;
+  text-indent: 2rem;
 }
 
 .bottom {
-    color: var(--color-text-white);
-    position: relative;
-    max-width: 100vw;
-    overflow: hidden;
+  color: var(--color-text-white);
+  position: relative;
+  max-width: 100vw;
+  overflow: hidden;
 }
-  
-  .bottom img {
-    max-height: 100vh;
+
+.bottom img {
+  max-height: 100vh;
 }
 
 .bottom div {
-    font: 200 1rem var(--font-text);
-    width: 100vw;
-    height: 40vh;
-    background-image: linear-gradient(
-      to top,
-      var(--color-main-theme),
-      var(--color-main-theme-alpha)
-    );
-    position: absolute;
-    bottom: 0;
-  }
+  font: 200 1rem var(--font-text);
+  width: 100vw;
+  height: 40vh;
+  background-image: linear-gradient(
+    to top,
+    var(--color-main-theme),
+    var(--color-main-theme-alpha)
+  );
+  position: absolute;
+  bottom: 0;
+}
 
+.bottom h2 {
+  margin-left: 10px;
+  position: absolute;
+  bottom: 30px;
+}
 
- .bottom h2{
-    margin-left: 10px;
-    position: absolute;
-    bottom: 30px;
-  }
-
-  .bottom p{
-    margin-left: 10px;
-    position: absolute;
-    bottom: 10px;
-
+.bottom p {
+  margin-left: 10px;
+  position: absolute;
+  bottom: 10px;
 }
