@@ -1,43 +1,96 @@
-:root{
-    --color-backgorund:#2AC2A3;
-    --color-main-theme:#EE5776;
-    --color-main-theme-alpha:#ee577500;
-    --color-text-white:#F4F4F4;
-    --color-text-black:#343434;
+body {
+  background-color: white;
 }
 
-body{
-    background-color: white;
+.splash {
+  position: relative;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
-
-.splash{
-    position: relative;
+.splash img {
+  max-height: 100vh;
 }
 
-.splash img{
-    max-height: 100vh;
+.splash .titulo {
+  width: 100vw;
+  height: 40vh;
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-main-theme),
+    var(--color-main-theme-alpha)
+  );
+  position: absolute;
 }
 
-.splash .titulo{
-    width: 100vw;
-    height: 40vh;
-    background-image: linear-gradient(to bottom, var(--color-main-theme) , var(--color-main-theme-alpha));
-    position: absolute;
+.splash h1,
+h2 {
+  color: var(--color-text-white);
+  padding-left: 14px;
 }
 
-.splash h1, h2{
-    color: var(--color-text-white);
-    padding-left: 14px;
+.splash h1 {
+  font: 800 3.5rem Playfair Display;
+  font-weight: bold;
 }
 
-.splash h1{
-    font: 600 3.5rem Playfair Display;
-    font-weight: bold;
+.splash h2 {
+  font: 200 2rem Raleway;
+  padding-top: 15px;
 }
 
-.splash h2{
-    font: 200 2rem Raleway;
-    padding-top: 15px;
-    
+.descricao {
+  margin: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.descricao h1,
+p {
+  margin-bottom: 2.5rem;
+  list-style-type: none;
+}
+
+.descricao h1 {
+  max-block-size: auto;
+  font: 800 2rem Playfair Display;
+  color: var(--color-text-black);
+  font-weight: bold;
+}
+
+.descricao p {
+  font: 500 1rem Raleway;
+  text-indent: 2rem;
+  line-height: 1.5rem;
+}
+
+.descricao model-viewer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  max-height: max-content;
+  margin-bottom: 4rem;
+}
+
+.descricao ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.descricao li {
+  margin: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  font: 500 1rem Raleway;
+}
+
+.descricao hr {
+  margin: 10px 0px;
+  border-top: 1px solid var(--color-light-gray);
+}
+
+.render img {
+  max-width: 100vw;
 }

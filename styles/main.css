@@ -1,8 +1,10 @@
 :root{
-    --color-background:#2AC2A3;
-    --color-main-them:#EE5776;
+    --color-backgorund:#2AC2A3;
+    --color-main-theme:#EE5776;
+    --color-main-theme-alpha:#ee577500;
     --color-text-white:#F4F4F4;
     --color-text-black:#343434;
+    --color-light-gray: #dfdfdf;
 }
 
 
@@ -12,8 +14,3 @@
     box-sizing: border-box;
 }
 
-h1 h2{
-    font: 200 1.6rem Raleway;
-    padding: 20px;
-    border: 1px solid red;
-}
