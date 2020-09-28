@@ -2,15 +2,15 @@
 <html lang="pt-br">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MONOMITO DESIGN</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/orcamento.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/orcamento.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;600;800&display=swap"
+        rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500;600;800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <link rel="icon" type="image/svg" href="/images/Logo_monomito_WHITE.svg" />
 
     <!-- 3D viewer -->
@@ -18,15 +18,29 @@
     <!-- https://developers.google.com/web/updates/2019/02/model-viewer -->
     <script type="module" src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer-legacy.js"></script>
-    
 </head>
 
-
 <body>
+    <div class="splash">
+        <div class="titulo">
+            <h2>Orçamento</h2>
+            <h1>Rachel Hoppe</h1>
+        </div>
 
+        <img src="/images/IMG_0906_LOWRES.jpg" alt="" />
+    </div>
 
-        <model-viewer ar alt="A 3D model of an astronaut." src="/3dmodels/rachel.gltf" controls auto-rotate ></model-viewer>
+    <div class="descricao">
+        <h1>Móvel para gatos</h1>
+        <p>
+            Móvel em compensado 15mm em tom natural, acabamento em selador/verniz
+            com proteção UV, corrediça telescópicas no gavetão inferior, portas com
+            dobradiças slow motion, portas com sistema click de abertura pés em
+            pinus com acabamento preto, selador e verniz
+        </p>
+    </div>
 
+    <model-viewer ar alt="A 3D model of an astronaut." src="/3dmodels/rachel.gltf" controls auto-rotate></model-viewer>
 </body>
 
 </html>

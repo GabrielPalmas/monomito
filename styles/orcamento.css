@@ -1,10 +1,43 @@
 :root{
     --color-backgorund:#2AC2A3;
-    --color-main-them:#EE5776;
+    --color-main-theme:#EE5776;
+    --color-main-theme-alpha:#ee577500;
     --color-text-white:#F4F4F4;
     --color-text-black:#343434;
 }
 
-.body{
-    color:#343434;
+body{
+    background-color: white;
+}
+
+
+.splash{
+    position: relative;
+}
+
+.splash img{
+    max-height: 100vh;
+}
+
+.splash .titulo{
+    width: 100vw;
+    height: 40vh;
+    background-image: linear-gradient(to bottom, var(--color-main-theme) , var(--color-main-theme-alpha));
+    position: absolute;
+}
+
+.splash h1, h2{
+    color: var(--color-text-white);
+    padding-left: 14px;
+}
+
+.splash h1{
+    font: 600 3.5rem Playfair Display;
+    font-weight: bold;
+}
+
+.splash h2{
+    font: 200 2rem Raleway;
+    padding-top: 15px;
+    
 }
