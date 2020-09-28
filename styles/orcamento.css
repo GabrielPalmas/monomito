@@ -1,0 +1,10 @@
+:root{
+    --color-backgorund:#2AC2A3;
+    --color-main-them:#EE5776;
+    --color-text-white:#F4F4F4;
+    --color-text-black:#343434;
+}
+
+.body{
+    color:#343434;
+}

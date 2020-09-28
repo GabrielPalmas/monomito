@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Palmas</title>
+    <title>MONOMITO DESIGN</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/orcamento.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500;600;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg" href="/images/Logo_monomito_WHITE.svg"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg" href="/images/Logo_monomito_WHITE.svg" />
+
+    <!-- 3D viewer -->
+    <!-- Documentation -->
+    <!-- https://developers.google.com/web/updates/2019/02/model-viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer-legacy.js"></script>
+    
 </head>
 
 
 <body>
 
-<div class="bio">
-    <img src="/images/profile.jpg" alt="Gabriel Palmas">
-    <div>
-        <p>Olá. Sou graduado em Design de Produto e Gráfico pela UTFPR, fui intercambista na Emily Carr University of Art+Design em Vancouver no programa de Animação. Sou designer de produtos para a área de inovação tecnológica e P&D durante o dia e maker durante a noite, onde trabalho com madeira maciça, couro e metal fazendo diversos produtos e projetos em mobiliário e acessórios para RPG. Tenho paixão por ajudar pessoas, pois acredito que juntos vamos mais longe, adoro ser desafiado e minha curiosidade incessante faz-me aprender de tudo muito rápido.</p>
-    </div>
-</div>
+
+        <model-viewer ar alt="A 3D model of an astronaut." src="/3dmodels/rachel.gltf" controls auto-rotate ></model-viewer>
+
 </body>
+
 </html>
