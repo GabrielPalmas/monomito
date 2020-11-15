@@ -10,7 +10,7 @@ function priceUpdate(value = 0) {
   cashPayment.appendChild(document.createTextNode(totalPrice));
   cash.appendChild(cashPayment);
 
-  cash.insertAdjacentHTML("beforeend", "<p>no boleto ou transferência</p>");
+  cash.insertAdjacentHTML("beforeend", "<p>com desconto no boleto ou transferência</p>");
   cash.insertAdjacentHTML(
     "beforeend",
     "<p>50% para iniciar o projeto e 50% na entrega.</p><br /><br />"
@@ -115,9 +115,14 @@ makeDescription();
 makeMaterialList(material);
 
 // render get
-document
-  .querySelector(".render img")
-  .setAttribute("src", "images/" + geral.renderImg);
+
+for (var i = 0; i <  geral.renderImg.length; i++) {
+
+    var img = document.createElement("img")
+    img.src = "images/" + geral.renderImg[i]
+    document.querySelector(".render").appendChild(img)
+
+}
 
 // color get
 let rule = Array.from(document.styleSheets[0].rules).find(

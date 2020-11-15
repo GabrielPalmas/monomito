@@ -1,19 +1,19 @@
 var geral={
     clientName: "Gabriel Palmas",
     furniture:{
-        title:"Móvel para gatos",
+        title:"Aparador",
         description: "Móvel em compensado 15mm em tom natural, acabamento em selador/verniz com proteção UV, corrediça telescópicas no gavetão inferior, portas com dobradiças slow motion, portas com sistema click de abertura pés em pinus com acabamento preto, selador e verniz.",
-        length:40.00, //cm
-        depth:30.00,  //cm
-        height:10.00,  //cm
+        length:160.00, //cm
+        depth:70.00,  //cm
+        height:80.00,  //cm
     },
     file3d: "Rachel.gltf",
-    renderImg: "render.png",
+    renderImg: ["untitled.355.png", "untitled.354.png"],
     mainColor: "#2AC2A3"
 }
 
 var payment = {
-  price: 450,
+  price: 675,
   productionTime: 147,
   discount: 0.05, //percent
   interestRate: 0.0299, //taxa de juros ao mes do parcelado

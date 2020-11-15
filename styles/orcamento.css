@@ -172,6 +172,9 @@ body {
   margin-bottom: 3rem;
 }
 
+.material span p{
+  text-indent: 2rem;
+}
 
 .material .carousel-cell div{
  display: flex;
