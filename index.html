@@ -1,145 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="mobile-web-app-capable" content="yes">
-    <title>MONOMITO DESIGN</title>
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/orcamento.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/svg" href="/images/Logo_monomito_WHITE.svg" />
 
-    <!-- Material DESIGN -->
-    <link
-      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>MONOMITO DESIGN</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/orcamento.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;600;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500;600;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/svg" href="/images/Logo_monomito_WHITE.svg" />
 
-    <!-- 3D viewer -->
-    <!-- Documentation -->
-    <!-- https://developers.google.com/web/updates/2019/02/model-viewer -->
-    <!-- https://arvr.google.com/scene-viewer-preview -->
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer-legacy.js"
-    ></script>
-  </head>
+  <!-- Material DESIGN -->
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-  <body>
-    <!-- Splash -->
-    <div class="splash">
-      <div class="titulo">
-        <h2>Orçamento</h2>
-        <h1>Bielson Palmas</h1>
-      </div>
+  <!-- 3D viewer -->
+  <!-- Documentation -->
+  <!-- https://developers.google.com/web/updates/2019/02/model-viewer -->
+  <!-- https://arvr.google.com/scene-viewer-preview -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer-legacy.js"></script>
 
-      <img src="images/IMG_0906_LOWRES.jpg" alt="splash" />
+  <!-- carrosel import -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+</head>
+
+<body>
+  <!-- Splash -->
+  <div class="splash">
+    <div class="titulo content">
+      <h2>Orçamento</h2>
+      <h1></h1>
     </div>
+  </div>
 
-    <!-- Descrição do Orçamento -->
-    <div class="descricao">
-      <h1>Móvel para gatos</h1>
-      <p>
-        Móvel em compensado 15mm em tom natural, acabamento em selador/verniz
-        com proteção UV, corrediça telescópicas no gavetão inferior, portas com
-        dobradiças slow motion, portas com sistema click de abertura pés em
-        pinus com acabamento preto, selador e verniz
-      </p>
 
-      <model-viewer
-        src="3dmodels/Rachel.gltf"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        quick-look-browsers="chrome safari"
-        ar-scale="auto"
-        alt="Móvel"
-        shadow-intensity="0"
-        camera-controls
-        auto-rotate
-      >
-      </model-viewer>
+  <!-- Descrição do Orçamento -->
+  <div class="descricao content">
+
+    <span>
+      <h1></h1>
+      <p>description</p>
 
       <ul>
         <li>
           <i class="material-icons">swap_horiz</i>
-          Largura <strong>80.00cm</strong>
+          Largura <strong></strong>
         </li>
         <hr />
         <li>
-          <i class="material-icons">swap_vert</i>Altura <strong>80.00cm</strong>
+          <i class="material-icons">swap_vert</i>Altura <strong></strong>
         </li>
         <hr />
         <li>
           <i class="material-icons">open_in_full</i>Profundidade
-          <strong>80.00cm</strong>
+          <strong></strong>
         </li>
       </ul>
+    </span>
+    <model-viewer ar ar-modes="webxr scene-viewer quick-look" quick-look-browsers="chrome safari" ar-scale="auto"
+      alt="Móvel" shadow-intensity="0" camera-controls auto-rotate>
+    </model-viewer>
+  </div>
+  
+  <div class="material">
+    <span class="content">
+      <h1>Escolha o material</h1>
+      <p>
+        Por se tratar de um material natural as cores e forma dos veios de cada espécie de madeira podem variar de
+        acordo com as
+        características de cada espécie,
+      </p>
+    </span>
+    <div class="carousel">
     </div>
+  </div>
 
-    <div class="render">
-      <img src="images/teste1.JPG" alt="render" />
-    </div>
+  <div class="render">
+    <img alt="render" />
+  </div>
 
-    <div class="cash">
-      <h1>585</h1>
-      <p>no boleto ou transferência</p>
-      <p>50% para iniciar o projeto e 50% na entrega.</p>
-      <br />
-      <br />
-      <p><strong>1x</strong> de <strong>614,25</strong> no cartão ou</p>
-      <p>em até <strong>6x</strong> de <strong>107,95</strong>(com juros)</p>
-      <br />
-      <br />
-      <p>tempo de produção:</p>
-      <p><strong>147 dias úteis</strong></p>
-    </div>
+  <div class="cash content">
+  </div>
 
-    <div class="bio">
-      <div>
-        <h1>Gabriel Palmas</h1>
-        <h2>Designer de produtos</h2>
-        <p>
-          Projeto e execução em madeira maciça, couro e metal. Prototipagem
-          rápida, usinagem CNC, impressão 3D e mais, só dizer o que precisa que
-          irei atrás.
-        </p>
-        <div class="social">
-          <a target="_blank" href="https://wa.me/5541997069589"
-            ><img src="/images/social-02.svg" alt=""
-          /></a>
-          <a target="_blank" href="https://www.instagram.com/bieozin42/"
-            ><img src="/images/social-01.svg" alt=""
-          /></a>
-          <a target="_blank" href="https://www.linkedin.com/in/gabrielpalmas/"
-            ><img src="/images/social-03.svg" alt=""
-          /></a>
-        </div>
+  <div class="bio">
+    <div class="content">
+      <h1>Gabriel Palmas</h1>
+      <h2>Designer de produtos</h2>
+      <p>
+        Projeto e execução em madeira maciça, couro e metal. Prototipagem
+        rápida, usinagem CNC, impressão 3D e mais, só dizer o que precisa que
+        irei atrás.
+      </p>
+      <div class="social">
+        <a target="_blank" href="https://wa.me/5541997069589"><img src="/images/social-02.svg" alt="" /></a>
+        <a target="_blank" href="https://www.instagram.com/bieozin42/"><img src="/images/social-01.svg" alt="" /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/gabrielpalmas/"><img src="/images/social-03.svg"
+            alt="" /></a>
       </div>
     </div>
-
-    <div class="bottom">
-      <div>
-        <h2>Luminária Kumiko</h2>
-        <p>projeto e execução por Gabriel Palmas</p>
-      </div>
-      <img src="images/kumiko.jpg" alt="" />
+  </div>
+  <div class="bottom">
+    <div class="titulo content">
+      <h2>Luminária Kumiko</h2>
+      <p>projeto e execução por Gabriel Palmas</p>
     </div>
-  </body>
+  </div>
+</body>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
 </html>

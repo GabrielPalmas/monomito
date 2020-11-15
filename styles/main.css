@@ -6,6 +6,7 @@
     --color-text-black:#343434;
     --color-light-gray: #dfdfdf;
     --font-text: Raleway;
+    --content-margin: 1.5em;
 }
     :focus{        
     outline: none;
@@ -18,5 +19,28 @@
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p, h1{
+    margin: 0;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+h1{
+    font: 800 2rem Playfair Display;
+    margin-bottom: 3rem;
+}
+h2{
+    font: 800 1.5rem Playfair Display;
+}
+
+p{
+    font: 500 1rem var(--font-text);
+    line-height: 1.5rem;
 }
 
