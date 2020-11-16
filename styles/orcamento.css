@@ -204,11 +204,15 @@ body {
 
 
 .render {
-  background-color: white;
+
+  background-color:var(--color-main-theme);
 }
 
 .render img {
-  width: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 10em 0;
 }
 
 .cash {
@@ -319,7 +323,6 @@ body {
   }
 
   .descricao {
-    
     flex-wrap: wrap ;
   
   }
