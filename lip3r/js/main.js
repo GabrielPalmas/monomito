@@ -1,9 +1,9 @@
 function priceUpdate(value = 0) {
-  var totalPrice = payment.price + value;
+  var totalPrice = payment.price + value + payment.shipmentPrice;
   var totalInstallments =
     totalPrice * (payment.discount + 1) * Math.pow(1 + payment.interestRate, 3);
 
-  cash = document.querySelector(".cash");
+  cash = document.querySelector(".cash div");
   cash.innerHTML = "";
 
   cashPayment = document.createElement("h1");
@@ -28,6 +28,20 @@ function priceUpdate(value = 0) {
       "x</strong> de <strong>" +
       (totalInstallments / payment.maxInstallments).toFixed(2) +
       "</strong> (com juros)</p>"
+  );
+
+  cash.insertAdjacentHTML(
+    "afterbegin",
+    "<p>Custo do frete <strong>" +
+    payment.shipmentPrice.toFixed(0) +
+    "</strong></p>"
+  );
+
+  cash.insertAdjacentHTML(
+    "beforeend",
+    "<br /><p>Estimativa de entrega <strong>" +
+    geral.productionTime
++    "</strong> dias úteis</p>"
   );
 }
 

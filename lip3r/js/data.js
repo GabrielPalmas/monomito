@@ -7,6 +7,7 @@ var geral={
         depth:70.00,  //cm
         height:80.00,  //cm
     },
+    productionTime:22, //dias uteis
     file3d: "MesaLip3r.gltf",
     renderImg: ["render_3.png"],
     mainColor: "#EE5776"
@@ -18,6 +19,7 @@ var payment = {
   discount: 0.05, //percent
   interestRate: 0.0299, //taxa de juros ao mes do parcelado
   maxInstallments: 6, //numero de parcelas
+  shipmentPrice: 70,
 }
 
 var material = {
