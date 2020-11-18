@@ -24,7 +24,8 @@ body {
 
 .bio h1 {
   margin-bottom: 0em;
-  padding: 1rem 0;
+  padding: 1rem 0  0.5rem 0;
+  font: 600 2rem var(--font-text);
 }
 
 .bio h2 {
@@ -64,7 +65,7 @@ transform: translate(-50%, -50%);
 .bottom h2 {
   bottom: 30px;
   position: absolute;
-  font-size: 1.2em;
+  font: 1.2em var(--font-text);
 }
 
 .bottom p {

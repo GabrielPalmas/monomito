@@ -7,7 +7,7 @@ function priceUpdate(value = 0) {
   cash.innerHTML = "";
 
   cashPayment = document.createElement("h1");
-  cashPayment.appendChild(document.createTextNode(totalPrice));
+  cashPayment.appendChild(document.createTextNode(totalPrice.toFixed(0)));
   cash.appendChild(cashPayment);
 
   cash.insertAdjacentHTML("beforeend", "<p>com desconto no boleto ou transferência</p>");
@@ -18,7 +18,7 @@ function priceUpdate(value = 0) {
   cash.insertAdjacentHTML(
     "beforeend",
     "<p><strong>1x</strong> de <strong>" +
-      totalPrice * (payment.discount + 1) +
+      (totalPrice * (payment.discount + 1)).toFixed(2) +
       "</strong> no cartão ou</p>"
   );
   cash.insertAdjacentHTML(
@@ -40,6 +40,7 @@ function makeMaterialList(array) {
     //create element img and apped to li
     var img = document.createElement("img");
     img.src = "../images/veneer/" + array[i].image;
+    img.setAttribute("onclick", "priceUpdate(" + priceValue + ")");
     item.appendChild(img);
 
     var div = document.createElement("div");
