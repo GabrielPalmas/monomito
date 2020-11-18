@@ -158,7 +158,6 @@ body {
 
 
 .material{
-  margin-bottom: 2.5em;
   display: grid;
   padding: var(--content-margin) 0;
   
