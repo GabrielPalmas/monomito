@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.content{
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+
+.bio {
+  width: 100%;
+  font: 300 1rem var(--font-text);
+  background-color: var(--color-main-theme);
+  color: var(--color-text-white);
+  height: 30vh;
+}
+
+.bio h1 {
+  margin-bottom: 0em;
+  padding: 1rem 0;
+}
+
+.bio h2 {
+  padding: 0px;
+  font: italic 300 1rem var(--font-text);
+  line-height: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.social {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+
+.bio img {
+  height: 64px;
+}
+
+.bio p {
+  padding: 0px;
+  margin: 0;
+  text-indent: 2rem;
+  max-width: 31em;
+}
+
+.bottom img {
+width: 20vw;
+height: 20vh;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.bottom h2 {
+  bottom: 30px;
+  position: absolute;
+  font-size: 1.2em;
+}
+
+.bottom p {
+  position: absolute;
+  bottom: 10px;
+  font: 300 0.8rem var(--font-text);
+}
+
+.bottom{
+  color: var(--color-text-white);
+   position: relative;
+    max-width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+    background-color:;
+    background-image: linear-gradient(
+      to bottom, #00000085, #00000085), url(../images/kumiko.jpg);
+    background-blend-mode: normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 660px) {
+  .titulo {
+    padding: 4rem 1.5rem;
+}
+}
+
+

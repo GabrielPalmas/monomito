@@ -160,6 +160,7 @@ body {
 .material{
   margin-bottom: 2.5em;
   display: grid;
+  padding: var(--content-margin) 0;
   
 }
 
@@ -289,6 +290,7 @@ body {
 .bottom p {
   position: absolute;
   bottom: 10px;
+  font: 300 1rem var(--font-text);
 }
 
 .bottom{

@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="mobile-web-app-capable" content="yes">
   <title>MONOMITO DESIGN</title>
-  <link rel="stylesheet" href="styles/main.css" />
-  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/orcamento.css" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;600;800&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500;600;800&display=swap"
@@ -19,7 +19,13 @@
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-  
+  <!-- 3D viewer -->
+  <!-- Documentation -->
+  <!-- https://developers.google.com/web/updates/2019/02/model-viewer -->
+  <!-- https://arvr.google.com/scene-viewer-preview -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer-legacy.js"></script>
+
   <!-- carrosel import -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -27,12 +33,64 @@
 </head>
 
 <body>
-  <div class="bottom">
+  <!-- Splash -->
+  <div class="splash">
     <div class="titulo content">
-      <img src="./images/Logo_monomito_WHITE.svg" alt="">
-      <h2>Luminária Kumiko</h2>
-      <p>projeto e execução por Gabriel Palmas</p>
+      <h2>Orçamento</h2>
+      <h1></h1>
     </div>
+  </div>
+
+
+  <!-- Descrição do Orçamento -->
+  <div class="descricao content">
+
+    <span>
+      <h1></h1>
+      <p></p>
+
+      <ul>
+        <li>
+          <i class="material-icons">swap_horiz</i>
+          Largura <strong></strong>
+        </li>
+        <hr />
+        <li>
+          <i class="material-icons">swap_vert</i>Altura <strong></strong>
+        </li>
+        <hr />
+        <li>
+          <i class="material-icons">open_in_full</i>Profundidade
+          <strong></strong>
+        </li>
+      </ul>
+    </span>
+    <model-viewer ar ar-modes="webxr scene-viewer quick-look" quick-look-browsers="chrome safari" ar-scale="auto"
+      alt="Móvel" shadow-intensity="0" camera-controls auto-rotate>
+    </model-viewer>
+  </div>
+  <!-- end Descrição do Orçamento -->
+  <!-- render section -->
+  <div class="render">
+  </div>
+  <!-- end render section -->
+
+  <!-- material section -->
+  <div class="material">
+    <span class="content">
+      <h1>Escolha o material</h1>
+      <p>
+        Por se tratar de um material natural as cores e forma dos veios de cada espécie de madeira podem variar de
+        acordo com as
+        características de cada espécie,
+      </p>
+    </span>
+    <div class="carousel">
+    </div>
+  </div>
+  <!-- end material section -->
+  
+  <div class="cash content">
   </div>
 
   <div class="bio">
@@ -52,9 +110,15 @@
       </div>
     </div>
   </div>
-  
+  <div class="bottom">
+    <div class="titulo content">
+      <h2>Luminária Kumiko</h2>
+      <p>projeto e execução por Gabriel Palmas</p>
+    </div>
+  </div>
 </body>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script type="text/javascript" src="js/data.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
 </html>
