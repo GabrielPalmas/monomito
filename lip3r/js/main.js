@@ -37,17 +37,19 @@ function makeMaterialList(array) {
     var item = document.createElement("div");
     item.className = "carousel-cell";
 
+    var div = document.createElement("div");
+
+    var priceValue = array[i].price*material.multiplier + material.laborCost;
+    
+    if (array[i].price == 0) priceValue = array[i].price
+
     //create element img and apped to li
     var img = document.createElement("img");
     img.src = "../images/veneer/" + array[i].image;
     img.setAttribute("onclick", "priceUpdate(" + priceValue + ")");
     item.appendChild(img);
 
-    var div = document.createElement("div");
-
-    var priceValue = array[i].price*material.multiplier + material.laborCost;
-
-    if (array[i].price == 0) priceValue = array[i].price
+    
 
     var input = document.createElement("input");
     input.setAttribute("type", "radio");
